@@ -1,6 +1,6 @@
 # Code Samples
 
-Included in this repo are 2 unrelated projects displaying common WordPress code. One proejct is a small post re-ordering plugin in the "kdreorder" directory. The other directory "ajax-samples" contains the JS and PHP files for an AJAX call using the WP Rest API.
+Included in this repo are 2 unrelated projects displaying common WordPress code. One project is a small post re-ordering plugin in the "kdreorder" directory. The other directory "ajax-samples" contains the JS and PHP files for an AJAX call using the WP Rest API.
 
 ## KDReorder
 
