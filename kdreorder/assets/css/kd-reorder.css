@@ -1,0 +1,113 @@
+/** KD Re-Order Admin CSS
+ * This plugin is made for desktop. Media queries are left out.
+**/
+
+.kdreorder-page .wrap h1 {
+  border-bottom: 5px solid #00009e;
+  box-sizing: border-box;
+  font-size: 29px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left: 30px;
+  margin-right: 5px;
+  padding-bottom: 0px;
+  width: calc( 100% - 65px);
+}
+
+.kdreorder-page p,
+.kdreorder-page div,
+.kdreorder-page select,
+.kdreorder-page ul,
+.kdreorder-page li,
+.kdreorder-page span {
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.kdreorder-page label > span {
+  position: relative;
+  top: 1px;
+  margin-right: 10px;
+}
+
+.tax-selector-container {
+  margin: 20px 30px;
+}
+
+
+#kdreorder-items-container {
+}
+
+#kdreorder-sortable {
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(150px, 1fr) );
+  grid-gap: 30px;
+  padding: 30px;
+}
+
+#kdreorder-items-container .thumbnail-item {
+  display: block;
+  height: 120px;
+  width: 150px;
+  position: relative;
+}
+
+#kdreorder-items-container .thumbnail-item .thumbnail-img {
+  display: block;
+  width: 150px;
+  height: 120px;
+}
+
+#kdreorder-items-container .thumbnail-item .menu-order {
+  border: 1px solid #333;
+  border-radius: 2px;
+  bottom: -14px;
+  display: block;
+  left: 50%;
+  max-width: 60px;
+  position: absolute;
+  text-align: center;
+  transform: translateX(-50%);
+}
+
+#kdreorder-items-container .thumbnail-title {
+  background: rgba(0,0,0,.6);
+  box-sizing: border-box;
+  color: white;
+  display: block;
+  left: 0;
+  overflow: hidden;
+  padding: 5px;
+  position: absolute;
+  text-overflow: ellipsis;
+  top: 0;
+  white-space: nowrap;
+  width: 100%;
+}
+
+#kdreorder-cat-submit,
+#kdreorder-form-submit {
+  margin-left: 30px;
+  margin-top: 10px;
+  color: white;
+  font-size: 14px;
+  padding: 10px 20px;
+  background: #00009e;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  font-weight: bold;
+  letter-spacing: .5px;
+}
+#kdreorder-cat-submit {
+  left: -15px;
+  margin-top: 0;
+  padding: 5px 15px 6px 15px;
+  position: relative;
+  top: 3px;
+}
+
+#kdreorder-cat-submit:hover,
+#kdreorder-form-submit:hover {
+  background-color: #1414c5;
+  box-shadow: 0 50px 50px -45px rgba(255,255,255,.5) inset;
+}
