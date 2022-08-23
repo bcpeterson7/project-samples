@@ -9,3 +9,7 @@ I built this plugin a few months ago for a client to sort their custom post_type
 ## AJAX Samples
 
 This code was developed to dismiss a tutorial that first-time users would see upon visiting a website. Since users are receiving video training they may want to bypass the brief tutorial. Clicking on the "Dismiss Tutorial" button (.dismiss-tutorial) on the front-end initiates the action.
+
+## WooCommerce
+
+The WooCommerce samples show the code required to create a custom product single template for a WooCommerce product that is selling Zoom meetings. The Zoom meetings are managed by a WooCommerce extension plugin called eRoom. Since the website is only in English I did not use any multilingual functions (`_()` or `_e()`) for any of the text. In order to get information for the template, I used a few custom MySQL queries to grab the information from the Zoom meeting post meta data. The page design was provided in a FIGMA file and I created it exactly as provided. 

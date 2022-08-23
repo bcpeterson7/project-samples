@@ -1,0 +1,765 @@
+/* Custom Styles for Woo-Zoom Single Product Page Integration */
+:root
+{
+	--header-font: 'Metropolis', 'Open Sans', Arial, sans-serif;
+	--accent-font: 'Inter', 'Open Sans', Arial, sans-serif;
+	--body-font:  'Metropolis', 'Open Sans', Arial, sans-serif;
+	--default-font-color: white;
+	--primary-color: #ff2a81; /* neon-pink */
+	--primary-highlight: #ff569b; /* neon-pink */
+	--primary-error: rgb(225, 1, 74); /* red-pink */
+	--secondary-color: #29b7dd; /* neon-teal */
+	--secondary-highlight: #58dafd; /* neon-teal */
+	--link-color: #29b7dd; /* link */
+	--link-highlight: #58dafd; /* link hover */
+}
+
+* {
+	font-family: var(--body-font);
+	-webkit-font-smoothing: antialiased;
+	box-sizing: border-box;
+}
+
+
+/* Zoom Zingle Page Header */
+#header .woo-single-header-inner div#breadcrumbs {
+	height: 76px;
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	margin-bottom: 0;
+	margin-top: 76px;
+	padding-left: 50px;
+}
+
+#header .woo-single-header-inner div#breadcrumbs #bread-line {
+  align-self: center;
+}
+
+#header .woo-single-header-inner #woo-single-title {
+  background: rgb(25, 25, 25);
+  background: radial-gradient(circle, rgb(25, 25, 25) 50%, rgb(0, 0, 0) 100%);
+  height: 230px;
+  padding: 0;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+	position: relative;
+}
+
+#header .woo-single-header-inner #woo-single-title-circle {
+  position: absolute;
+  top: 15px;
+  left: 11%;
+  width: 200px;
+  height: 200px;
+}
+
+#header .woo-single-header-inner #woo-single-title svg circle {
+	fill: #29b7dd54;
+}
+
+#header .woo-single-header-inner .woo-shop-single-title {
+  text-align: left;
+  padding-left: 50px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+#page .inner {
+	padding: 50px;
+}
+
+.woo-zoom-product {
+	display: flex;
+	flex-direction: row;
+}
+
+
+/* Purchased Video Product */
+.woo-zoom-product.purchased .product.video-product {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	justify-content: center;
+	align-content: center;
+	padding: 60px 0;
+}
+
+.woo-zoom-product.purchased .product.video-product .product-video-viewer,
+.woo-zoom-product.purchased .product.video-product .product-description {
+	max-width: 1200px;
+	width: 100%;
+	height: auto;
+	align-self: center;
+	justify-self: center;
+	padding-bottom: 60px;
+}
+
+.woo-zoom-product.purchased .product.video-product .product-video-viewer .video-button {
+	display: none;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  background: rgba(0,0,0,.5);
+  border: 2px solid currentColor;
+  padding: 15px 30px;
+  border-radius: 10px;
+  color: var(--primary-color);
+  opacity: .85;
+	z-index: 11;
+	transition: all 300ms ease;
+}
+
+
+
+/* Product Not Purchased */
+.woo-zoom-product .product-left {
+	flex: 1 1 fit-content;
+}
+
+.woo-zoom-product .product-right {
+	min-width: 500px;
+	/* width: clamp(300px, 500px, 500px); */
+	width: 500px;
+	margin-left: 100px;
+}
+
+.woo-zoom-product :where(div, span, label, input) {
+	font-family: var(--accent-font);
+}
+.woo-zoom-product :where(div, span) {
+	color: white;
+}
+
+.woo-zoom-product .zoom-single-details-header {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+	/* border-bottom: 2px solid #00c9ff5c; */
+	/* padding-bottom: 50px; */
+	/* margin-bottom: 50px; */
+}
+
+.woo-zoom-product .zoom-single-details-header > div {
+	width: 50%;
+}
+
+.woo-zoom-product .meeting-details .meeting-details-row {
+	padding: 5px 0;
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+}
+
+.woo-zoom-product .meeting-details .meeting-details-row:not(:last-of-type) {
+	border-bottom: 1px solid white;
+}
+
+.woo-zoom-product .meeting-details .meeting-details-row.max-participants {
+	background: transparent url(https://nbst.kismetwebdevelopment.com/uploads/2022/04/people-icon.png) no-repeat left 4px center;
+	padding-left: 26px;
+}
+
+.woo-zoom-product .meeting-details .meeting-details-row.platform {
+	background: transparent url(https://nbst.kismetwebdevelopment.com/uploads/2022/04/platform-icon.png) no-repeat left 2px center;
+	padding-left: 26px
+}
+
+.woo-zoom-product .meeting-details .meeting-details-row.max-participants .details-info,
+.woo-zoom-product .meeting-details .meeting-details-row.platform .details-info {
+	margin-left: -26px;
+}
+
+
+.woo-zoom-product .meeting-details .meeting-details-row > span {
+	flex: 1 1;
+	font-weight: 200;
+}
+
+.woo-zoom-product .meeting-details .meeting-details-row > span.details-info {
+	font-weight: 500;
+	text-transform: capitalize;
+}
+
+.woo-zoom-product .meeting-details .meeting-details-header-row {
+	color: var(--secondary-color);
+	text-transform: uppercase;
+	font-size: 18px;
+}
+
+.woo-zoom-product .meeting-details .meeting-details-row .length-icon {
+  font-size: 8px;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 2px;
+  box-sizing: border-box;
+  width: 18px;
+  height: 18px;
+  position: relative;
+  top: -1px;
+  margin-right: 5px;
+  display: inline-flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.woo-zoom-product .meeting-details .meeting-details-row .time-icon {
+  font-size: 8px;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 2px;
+  box-sizing: border-box;
+  width: 19px;
+  height: 19px;
+  position: relative;
+  top: 5px;
+  margin-right: 5px;
+  display: inline-block;
+}
+.woo-zoom-product .meeting-details .meeting-details-row .time-icon:after,
+.woo-zoom-product .meeting-details .meeting-details-row .time-icon:before {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 8px;
+  background-color: white;
+}
+.woo-zoom-product .meeting-details .meeting-details-row .time-icon:after {
+  transform: rotate(-90deg);
+  position: relative;
+  left: 3px;
+  top: 3px;
+}
+.woo-zoom-product .meeting-details .meeting-details-row .time-icon:before {
+  width: 4px;
+  transform: rotate(30deg);
+  position: relative;
+  top: 8px;
+  left: 6px;
+}
+
+
+.woo-zoom-product .zoom-single-details-header .meeting-date {
+	width: 50%;
+	margin-left: 50%;
+	border: 2px solid var(--primary-color);
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: space-between;
+	padding: 20px;
+	margin-top: 15px;
+}
+
+.woo-zoom-product .zoom-single-details-header .meeting-date > span {
+	color: var(--primary-color);
+	text-align: center;
+}
+
+
+.woo-zoom-product .zoom-single-details-header .meeting-date span.orig-date {
+	display: none;
+	font-size: 36px;
+	font-weight: 500;
+}
+
+.woo-zoom-product .zoom-single-details-header .meeting-date .date-number-big {
+	font-size: 42px;
+	font-weight: 500;
+}
+
+.woo-zoom-product .zoom-single-details-header .meeting-date .date-month-year {
+	font-size: 32px;
+	font-weight: 500;
+}
+
+.woo-zoom-product .zoom-single-details-header-spacer {
+	height: 2px;
+	background: linear-gradient(27deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+	width: 100%;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.woo-zoom-product .product-overview :where(h1, h2, h3, h4, h5, h6) {
+	text-align: left !important;
+	color: var(--secondary-color);
+	font-weight: 500;
+	font-family: var(--accent-font);
+}
+
+.woo-zoom-product .product-overview *:not(:where(h1, h2, h3, h4, h5, h6)) {
+	font-size: 18px;
+	line-height: 28px;
+}
+
+
+
+
+/* Product Right */
+.woo-zoom-product .product-right .enrollment-header {
+	font-size: 18px;
+}
+
+.woo-zoom-product .product-right .product-enrollment {
+	border: 2px solid var(--primary-color);
+	padding: 40px 20px;
+	margin-top: 15px;
+}
+
+.woo-zoom-product .product-right .enrollment-top-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.woo-zoom-product .product-right .enrollment-top-info .enrollment-price {
+	order: 2;
+}
+
+.woo-zoom-product .product-right .enrollment-top-info .enrollment-date > span {
+	display: block;
+}
+.woo-zoom-product .product-right .enrollment-top-info .enrollment-the-day {
+	display: block;
+	font-size: 24px;
+	font-weight: 500;
+}
+
+.woo-zoom-product .product-right .enrollment-top-info .webinar-cost,
+.woo-zoom-product .product-right .enrollment-top-info .webinar-cost .original-price,
+.woo-zoom-product .product-right .enrollment-top-info .webinar-cost .sales-price {
+	font-size: 24px;
+	font-weight: 500;
+}
+
+.woo-zoom-product .product-right .enrollment-top-info .enrollment-price .original-price {
+	text-decoration: line-through;
+	font-weight: 300;
+	opacity: 0.75;
+}
+
+.woo-zoom-product .product-right .enrollment-top-info .webinar-cost .sales-price {
+	margin-left: 10px;
+}
+
+.on-sale {
+  background-color: var(--secondary-color);
+  border-radius: 100px;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  display: block;
+  line-height: 50px;
+  position: absolute;
+  top: 18px;
+  right: 0;
+}
+
+
+
+.woo-zoom-product .product-right .enrollment-availability {
+	margin-top: 30px;
+}
+
+.woo-zoom-product .product-right .product-enrollment .webinar-availability {
+  white-space: nowrap;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.woo-zoom-product .product-right .product-enrollment .web-availability.large-availability {
+  padding: 5px 25px 5px 43px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 20px;
+	background: transparent url(https://nbst.kismetwebdevelopment.com/uploads/2022/04/people-icon.png) no-repeat left 24px center;
+}
+
+.woo-zoom-product .product-right .product-enrollment .web-availability.large-availability {
+  border: 1px solid var(--secondary-color);
+}
+
+.woo-zoom-product .product-right .product-enrollment .web-availability.limited-availability {
+  border: 1px solid var(--primary-color);
+}
+
+.woo-zoom-product .product-right .product-enrollment .web-availability.no-availability {
+  border: 1px solid var(--primary-error);
+}
+
+.woo-zoom-product .enrollment-button.pink {
+  background: linear-gradient(0deg, var(--primary-color) 0%, var(--primary-color) 100%);
+  border: 0;
+  color: white;
+  display: block;
+  width: 100%;
+  font-size: 17px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 15px 20px;
+  letter-spacing: .5px;
+	cursor: pointer;
+	transition: all 222ms ease;
+	box-shadow: none;
+}
+
+.woo-zoom-product .enrollment-button.pink:hover {
+  box-shadow: 0 -45px 30px -30px var(--secondary-color) inset, 0px 1px 1px 0 black, 0 20px 50px -15px #44cbef;
+	transition: all 222ms ease;
+}
+
+
+.enrollment-step.step-2 .form-toggler {
+	margin-top: 15px;
+	display: block;
+}
+.enrollment-step.step-2 .form-toggler > label.pane-choice {
+	width: 50%;
+	flex: 1 1 auto;
+	text-align: center;
+	color: white;
+	padding: 10px 20px;
+	font-size: 20px;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	float: left;
+}
+.enrollment-step.step-2 .form-toggler > input {
+	display: none;
+}
+.enrollment-step.step-2 .form-toggler > .login-pane:checked ~ .login-pane-label,
+.enrollment-step.step-2 .form-toggler > .register-pane:checked ~ .register-pane-label {
+  background-color: var(--primary-color);
+}
+
+.login-pane_,
+.register-pane_ {
+	display: none;
+}
+
+.login-pane:checked ~ .login-pane_ {
+	display: block;
+}
+.register-pane:checked ~ .register-pane_ {
+	display: block;
+}
+
+
+.enrollment-step.step-2 .form-toggler > label.pane-choice input {
+	display: none;
+}
+
+
+
+.enrollment-step .enrollment-header a.cancel {
+		float: right;
+}
+
+.enrollment-step .woocommerce-form.woocommerce-form-login.login,
+.woocommerce .enrollment-step form.register,
+.enrollment-step .enrollment-total-payment-choice,
+.enrollment-step form.checkout {
+	margin: 0;
+	border: 2px solid var(--primary-color);
+  padding: 50px 20px 40px 20px;
+	max-width: 500px;
+  border-radius: 0px;
+	clear: both;
+}
+
+.enrollment-step form.checkout {
+	padding-top: 0;
+}
+
+.woocommerce .enrollment-step form .form-row-first,
+.woocommerce .enrollment-step form .form-row-last,
+.woocommerce-page .enrollment-step form .form-row-first,
+.woocommerce-page .enrollment-step form .form-row-last,
+.woocommerce .enrollment-step form.checkout .form-row,
+.woocommerce .enrollment-step form .woocommerce-form-row {
+	width: 100%;
+	position: relative;
+	margin-bottom: 15px;
+}
+
+.woocommerce .enrollment-step form.woocommerce-form-register .woocommerce-form-row:last-of-type {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 0 !important;
+}
+
+.woocommerce .enrollment-step form .form-row-first > label,
+.woocommerce .enrollment-step form .form-row-last > label,
+.woocommerce .enrollment-step form .woocommerce-form-row > label,
+.woocommerce .enrollment-step form.checkout .form-row > label:not([for="order_comments"]) {
+	font-size: 10px;
+  position: absolute;
+  top: 6px;
+  left: 23px;
+  color: #676767;
+  font-family: var(--accent-font);
+  letter-spacing: 1px;
+	z-index: 1;
+}
+
+.woocommerce .enrollment-step form .form-row select,
+.woocommerce .enrollment-step form .form-row input.input-text {
+	padding: 25px 20px 10px 20px;
+	border: none;
+}
+
+.select2-results__option { color: #333 !important; }
+.select2-container--default .select2-selection--single {
+	height: 55px;
+	border: solid 1px white;
+}
+.select2-container--default .select2-selection--single #select2-billing_state-container.select2-selection__rendered {
+	position: relative;
+	top: 20px;
+	left: 10px;
+}
+
+
+.woocommerce .enrollment-step form h3 {
+	margin: 20px 0;
+	font-size: 24px;
+	line-height: clamp(1.5rem, 2rem, 2rem);
+	letter-spacing: 1px;
+	position: relative;
+	text-align: center;
+	color: white;
+	font-weight: 500;
+	font-family: var(--accent-font);
+}
+
+.woocommerce div form .form-row .required {
+	color: var(--primary-color);
+	font-size: 12px;
+}
+
+.enrollment-step .woocommerce-button.button.woocommerce-form-login__submit,
+.enrollment-step .woocommerce-button.button.woocommerce-form-register__submit,
+.enrollment-step #membership-agreement-container input[type="submit"],
+.woocommerce .enrollment-step #payment #place_order, .woocommerce-page .enrollment-step #payment #place_order {
+	background-color: var(--primary-color);
+	color: white;
+	font-family: var(--accent-font);
+	text-transform: uppercase;
+	text-align: center;
+	min-width: 225px;
+	font-weight: 500;
+	margin-right: 25px;
+	border: none;
+	transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.enrollment-step #membership-agreement-container input[type="submit"] {
+	padding: 15px 25px;
+	margin: 20px 0;
+}
+
+.woocommerce .enrollment-step #payment #place_order, .woocommerce-page .enrollment-step #payment #place_order {
+	margin: 0 auto;
+	float: none;
+	display: block;
+	padding: 15px 25px;
+}
+
+.woocommerce .woocommerce-checkout-payment li,
+.woocommerce .woocommerce-checkout-payment div,
+.woocommerce .woocommerce-checkout-payment p,
+.woocommerce .woocommerce-checkout-payment input {
+	color: #333;
+}
+.woocommerce .woocommerce-checkout-payment a {
+	color: #0097c0;
+}
+
+.enrollment-step .woocommerce-button.button.woocommerce-form-login__submit:hover,
+.enrollment-step .woocommerce-button.button.woocommerce-form-register__submit:hover,
+.enrollment-step #membership-agreement-container input[type="submit"]:hover,
+.woocommerce .enrollment-step #payment #place_order:hover, .woocommerce-page .enrollment-step #payment #place_order:hover {
+	box-shadow: 0 5px 5px rgb(255 255 255 / 25%) inset, 0 -10px 10px -5px rgb(0 0 0 / 25%) inset;
+	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+
+.enrollment-step .woocommerce-form.woocommerce-form-login p.lost_password {
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.enrollment-step .woocommerce-notices-wrapper {
+  display: block;
+  clear: both;
+}
+
+.enrollment-step .woocommerce-notices-wrapper ul {
+	margin-bottom: 0;
+}
+
+.scrolling-read-box {
+  overflow-y: scroll;
+  margin-bottom: 20px;
+}
+
+#membership-agreement {
+	border: 2px solid var(--primary-color);
+	padding: 10px 0 10px 10px;
+	margin-bottom: 10px;
+}
+
+#membership-agreement .scrolling-read-box {
+	overflow-y: scroll;
+}
+
+#membership-agreement :where(h1,h2,h3,h4,h5,h6) {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.enrollment-step .enrollment-total-payment-choice {
+	padding: 50px;
+}
+
+.enrollment-step .enrollment-total-payment-choice .payment-methods {
+	text-align: center;
+}
+
+.enrollment-step .enrollment-total-payment-choice .total {
+	padding-top: 10px;
+	margin-top: 10px;
+	border-top: 1px solid white;
+}
+
+.enrollment-step .enrollment-total-payment-choice .payment-methods label:not(:last-of-type) {
+	margin-right:13px;
+}
+
+.enrollment-step .enrollment-total-payment-choice .payment-methods input {
+	margin-right: 7px;
+}
+1
+.enrollment-step .enrollment-total-payment-choice .totals-value {
+	float: right;
+	text-align: right;
+}
+
+.enrollment-step .enrollment-total-payment-choice .woocommerce-Price-currencySymbol {
+	margin-right: 4px;
+}
+
+.enrollment-step .enrollment-total-payment-choice .payment-methods {
+	margin-top: 50px;
+}
+
+.enrollment-step .enrollment-total-payment-choice .cost-row {
+	position: relative;
+}
+
+.enrollment-step .enrollment-total-payment-choice .cost-row .totals-value {
+	position: absolute;
+	right: 0;
+}
+
+
+body.woocommerce .col2-set .col-1, body.woocommerce-page .col2-set .col-1,
+body.woocommerce .col2-set .col-2, body.woocommerce-page .col2-set .col-2,
+.woocommerce .enrollment-step .col2-set .col-1, .woocommerce-page .enrollment-step .col2-set .col-1,
+.woocommerce .enrollment-step .col2-set .col-2, .woocommerce-page .enrollment-step .col2-set .col-2 {
+  float: none;
+  width: 100%;
+}
+
+.woocommerce .enrollment-step table.shop_table th,
+.woocommerce .enrollment-step table.shop_table td {
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+div.enrollment-step .woocommerce-checkout #payment {
+	border: 0;
+}
+
+.enrollment-step .simple-product .enrollment-price {
+	display: block;
+	width: 100%;
+}
+
+.enrollment-step .simple-product .simple-price-label {
+	font-size: 24px;
+	float: left;
+}
+.enrollment-step .simple-product .webinar-cost {
+	float: right;
+}
+
+
+
+/* Woo Payment */
+.wc_payment_method.payment_method_nowpayments_gateway img {
+	width: 320px;
+  margin: 0 auto 20px auto;
+  display: block;
+}
+
+div .woocommerce-checkout #payment .wc_payment_method.payment_method_stripe div.payment_box .form-row {
+	width: 100%;
+	padding: 0;
+}
+
+#add_payment_method #payment ul.payment_methods .stripe-card-group > div,
+.woocommerce-checkout #payment ul.payment_methods .stripe-card-group > div,
+#stripe-exp-element,
+#stripe-cvc-element {
+	padding-top: 20px;
+	width: 100%;
+}
+
+.woocommerce-checkout #payment ul.payment_methods li input#wc-stripe-new-payment-method {
+	margin: 0;
+	float: left;
+	width: auto;
+}
+.woocommerce-checkout #payment ul.payment_methods li input#wc-stripe-new-payment-method + label[for="wc-stripe-new-payment-method"] {
+	display: block;
+    position: relative;
+    top: 0;
+}
+
+
+
+#content table.shop_table a.remove,
+.woocommerce div a.remove {
+  color: red;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  height: 20px;
+  line-height: 20px;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  width: 20px;
+  float: left;
+  border: 0;
+	position: relative;
+	top: 3px;
+}
+.product_name {
+  float:left;
+}
+
+.woocommerce-message {
+	margin-top: 20px;
+	color: #333;
+}
