@@ -21,7 +21,7 @@ if ( class_exists( 'KDReorder' ) ) :
     {
       // Create menu pages
       add_action( 'admin_menu', array( $this, 'kd_reorder_menu_page' ) );
-      // Add custom class to re-order screen 
+      // Add custom class to re-order screen
       add_filter( 'admin_body_class', array( $this, 'kd_admin_body_class') );
     }
 
@@ -75,7 +75,7 @@ if ( class_exists( 'KDReorder' ) ) :
     {
       if ( !empty( $_POST ) && array_key_exists("submit", $_POST) )
         $this->kd_reorder_items_save();
-      $post_type = ( isset($_GET['post_type'])) ? $_GET['post_type'] : 'Posts';
+      $post_type = ( isset($_GET['post_type'])) ? $_GET['post_type'] : 'post';
 
       $lookup_term = ( isset($_POST['category'])) ? $_POST['category'] : '';
       $taxonomies = get_object_taxonomies($post_type, 'objects');
@@ -90,7 +90,7 @@ if ( class_exists( 'KDReorder' ) ) :
             // Create a drop-down select menu to show the post type categories. This plugin creates a specific sort order for
             // each category and the first step is for the user to select the category.
             foreach ( $taxonomies as $tax ) {
-              if ( $tax->labels->name == "Tags" )
+              if ( $tax->labels->name == "Tags" || $tax->labels->name == "Formats" )
                 continue;
 
               $tax_name = $tax->name;
@@ -127,11 +127,11 @@ if ( class_exists( 'KDReorder' ) ) :
         </form>
         <?php
 
-        // Once a user selects a category, or term, to re-order the the code below loads all of the posts (or custom posts) and
+        // Once a user selects a category, or term, to re-order the code below loads all of the posts (or custom posts) and
         // prepares them to be re-ordered in a drag-and-drop interface.
         if ( $lookup_term != '' ) {
           $option_key = "kdreorder_{$tax_name}_{$lookup_term}";
-          $post_order = get_option( $option_key );
+          $post_order = get_option( $option_key, [] );
           $post_ids = array_keys($post_order);
           $obj = get_post_type_object( $post_type );
           $plural_label = '';
@@ -243,7 +243,12 @@ if ( class_exists( 'KDReorder' ) ) :
       $post_types = $this->kd_create_default_option_values();
 
       // Get saved values: what post types are we enabling sorting for
-      $kd_reorder_post_types = maybe_unserialize(get_option("kd_reorder_post_types", $post_types));
+      $kd_reorder_post_types_saved = maybe_unserialize(get_option("kd_reorder_post_types", $post_types));
+      $kd_reorder_post_types = [];
+      foreach($post_types as $pt => $pt_) {
+        $checked = ( array_key_exists($pt, $kd_reorder_post_types_saved) ) ? $kd_reorder_post_types_saved[$pt] : false;
+        $kd_reorder_post_types[$pt] = $checked;
+      }
 
       // Save New Values - if the form was submitted save the values
       if ( !empty($_POST) )
@@ -271,7 +276,7 @@ if ( class_exists( 'KDReorder' ) ) :
      */
     public function kd_create_default_option_values() : array
     {
-      $post_types = ["post" => "", "page" => ""];
+      $post_types = ["post" => ""];
       $custom_post_types = get_post_types(['public' => true, '_builtin' => false]);
       foreach( $custom_post_types as $type ) {
         $post_types[$type] = "";
@@ -286,6 +291,7 @@ if ( class_exists( 'KDReorder' ) ) :
       echo '<div id="kd-reorder-post-types">';
       echo '<p>Choose post types to enable custom ordering for:</p>';
       foreach( $kd_reorder_post_types as $key => $value ) {
+        if ( $key == "page") continue;
         $checked = '';
         $checked = ( true == $value ) ? ' checked="checked"' : '';
         echo  '<p><label for="chbx-'.$key.'"><input type="checkbox" id="chbx-'.$key.'" name="kd_reorder_post_types['.$key.']" value="Yes"'.$checked.'><span class="label">'.ucwords($key).'</label></p>';
@@ -331,8 +337,13 @@ if ( class_exists( 'KDReorder' ) ) :
       $term       = isset( $_POST['term'] )       ? $_POST['term']       : [];
       $menu_order = isset( $_POST['menu_order'] ) ? $_POST['menu_order'] : [];
 
+      // fix tax issue for default posts
+      if ( $taxonomy == "category" )
+        $taxonomy = "cat";
+
       $option_key = "kdreorder_{$taxonomy}_{$term}";
       update_option( $option_key, $menu_order);
+      return;
     }
 
 

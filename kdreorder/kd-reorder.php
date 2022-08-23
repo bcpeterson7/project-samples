@@ -6,7 +6,7 @@ Description: KD Reorder Posts - Reorder posts and custom post types with a drag 
 Author: Kismet Design
 Text Domain: kdreorder
 Domain Path: /languages
-Version: 1.0.0.2
+Version: 1.0.0.3
 Author URI: https://kismetwebdesign.com
 */
 
