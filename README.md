@@ -16,13 +16,13 @@ The WooCommerce samples show the code required to create a custom product single
 
 # Websites Portfolio
 
-https://dp.dataportsis.com/  (K-12 School District Staff Portal Site)
-username: demo.account
-password: demo.account
+https://dp.dataportsis.com/  (K-12 School District Staff Portal Site)  
+username: demo.account  
+password: demo.account  
 
-https://oregongutterservice.com/
-https://angelssitterservice.com/
-https://kofflerboats.com/
-https://kismetwebdesign.com/
-https://hawaiioceansports.com/
-https://emsrepair.com/
+https://oregongutterservice.com/  
+https://angelssitterservice.com/  
+https://kofflerboats.com/  
+https://kismetwebdesign.com/  
+https://hawaiioceansports.com/  
+https://emsrepair.com/  
