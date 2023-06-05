@@ -13,3 +13,17 @@ This code was developed to dismiss a tutorial that first-time users would see up
 ## WooCommerce
 
 The WooCommerce samples show the code required to create a custom product single template for a WooCommerce product that is selling Zoom meetings. The Zoom meetings are managed by a WooCommerce extension plugin called eRoom. Since the website is only in English I did not use any multilingual functions (`_()` or `_e()`) for any of the text. In order to get information for the template, I used a few custom MySQL queries to grab the information from the Zoom meeting post meta data. The page design was provided in a FIGMA file and I created it exactly as provided. 
+
+# Websites Portfolio
+
+https://dp.dataportsis.com/  (K-12 School District Staff Portal Site)
+username: demo.account
+password: demo.account
+
+https://oregongutterservice.com/
+https://angelssitterservice.com/
+https://kofflerboats.com/
+https://kismetwebdesign.com/
+https://hawaiioceansports.com/
+https://emsrepair.com/
+
