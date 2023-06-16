@@ -5,7 +5,7 @@ All websites are fully responsive across mobile, tablet and desktop devices and 
 ## Dataport - K-12 School District Information Management System
 ### [https://dp.dataportsis.com](https://dp.dataportsis.com/)
 #### username: demo.account<br>password: demo.account
-Dataport is an information management system for school districts. The portal is built on top of WordPress, and sits behind a school's firewall. As a bespoke solution for school districts I've developed different modules as needed: 504 plan module, mental health referrals, volunteer management, staff continuing education tracking, library resource rentals, COVID-19 health screening, suicide intervention management, community concerns reporting, restraint and seclusion reporting, and behavioral safety concern reporting. The portals follow the State of Oregon's Student Privacy laws and securely handles information. These portals are on top of Linux LAMP/LEMP stacks, some of which I managed and maintained. Student and staff information is imported nightly from other district CMS/HMIS systems. The demo link shows a very barebones install, in regard to available modules.
+Dataport is an information management system for school districts. The portal is built on top of WordPress, and sits behind a school's firewall. As a bespoke solution for school districts I've developed different modules as needed: 504 plan module, mental health referrals, volunteer management, staff continuing education tracking, library resource rentals, COVID-19 health screening, suicide intervention management, community concerns reporting, restraint and seclusion reporting, and behavioral safety concern reporting. The portals follow the State of Oregon's Student Privacy laws and securely handles information. These portals are on top of Linux LAMP/LEMP stacks, some of which I managed and maintained. Student and staff information is imported nightly from other district CMS/HMIS systems. The demo link shows a very bare-bones install, in regard to available modules.
 
 ## Nebi StarTrader
 ### ~~[https://nebistartrader.com](https://nebistartrader.com)~~ 
@@ -15,6 +15,10 @@ This is a WordPress site using WooCommerce to sell Zoom meetings. A designer pro
 ## Angels Sitter Services
 ### [https://angelssitterservice.com](https://angelssitterservice.com)
 During my time at Oyova I completed many websites and app development projects. For this site, I was solely responsible for the complete design and development of the site, with feedback from my supervisor on colors and images. This WordPress site is a basic 4 page information site with an employee training and quiz section available only to approved users. This site uses the WP Bakery page builder.
+
+## Koffler Boats
+### [Kofflerboats.com](Kofflerboats.com)
+Koffler Boats produces a wide variety of boating craft for anglers. Traffic through this WordPress site has caused the company to triple in employees. The boat inventory is a custom post type, with a custom template. The site also features a custom drag and drop image gallery on some “build” pages. Additionally, the boat feature pages utilize slick.js to display modal galleries of the various features a customer can order. Organic SEO optimization, with A/B testing, has greatly increased site traffic.
 
 ## Oregon Gutter Service
 ### [https://oregongutterservice.com](https://oregongutterservice.com)
@@ -27,3 +31,7 @@ This is a WordPress site I designed and developed around their logo colors. I am
 ## Kismet Design
 ### [https://kismetwebdesign.com](https://kismetwebdesign.com)
 This is my personal website developed solely in HTML5, CSS3, JavaScript and a little PHP. This was an experiment to see if I could create a website that loads faster than a WordPress site. It turns out to be negligibly faster in page load times than a well optimized WordPress site hosted on a VPS or managed platform like WP Engine with the WP Rocket caching plugin. I also integrated animated SVG graphics.
+
+## ENS Repair
+### [https://emsrepair.com](https://emsrepair.com/)
+After creating their SEO optimized website, EMS Repair had to hire more staff as their business tripled in income. The site design is now 8+ years old and in need of refreshing as modern standards are for full-width layouts with better UI/UX controls. EMS Repair also features a custom staff portal where technicians can make vehicle inspection entries. The portal features a JS script I developed to use a tablet's, or phone's, rear facing camera to take pictures of items needing repair. Additionally, form entries are converted to PDF for email to their customer’s corporate headquarters.
