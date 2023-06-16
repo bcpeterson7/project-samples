@@ -19,9 +19,9 @@ $(window).on('load', function() {
 
 let jqXHR = null;
 function dismiss_tutorial() {
-  let cv = true;
+  let cv = false;
   cv = confirm("Are you sure you want to skip the tutorial?");
-  if ( cv == true ) {
+  if ( true === cv ) {
     // AJAX Save the value and hide the tutorials.
     jqXHR = $.ajax({
       type: 'POST',
@@ -63,7 +63,6 @@ function dismiss_tutorial() {
       // Usually, for specific error messages I return them, from the PHP script, with a 403 header and process them here.
       // This application is really either a success or a failure so I skipped that and have a generic error message if there
       // is some type of nonce or connection failure.
-      console.log("Error 99: security check failure!");
       alert("There was a connection issue. Please try again!");
     })
     .always(function( data ) {
