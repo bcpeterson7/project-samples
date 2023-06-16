@@ -12,16 +12,12 @@ if ( class_exists( 'KDReorder' ) ) :
 
   class KDReorderFrontend {
 
-    public function __construct()
-    {}
-
-
+    public function __construct() {}
 
     public function init()
     {
       add_action('pre_get_posts', array( $this, 'kd_pre_get_posts' ) );
     }
-
 
     /**
      * kd_pre_get_posts description: display posts according to the custom order the user has set
@@ -40,8 +36,9 @@ if ( class_exists( 'KDReorder' ) ) :
         return;
       }
 
-      if ( !property_exists($query, 'query') )
+      if ( !property_exists($query, 'query') ) {
         return $query;
+      }
 
       $kd_reorder_post_types = get_option("kd_reorder_post_types", '');
       $kd_reorder_post_types = ( is_string($kd_reorder_post_types) && $kd_reorder_post_types != '' ) ? maybe_unserialize($kd_reorder_post_types) : [];
@@ -103,7 +100,6 @@ if ( class_exists( 'KDReorder' ) ) :
       $query->query_vars['orderby'] = 'post__in';
       return $query;
     }
-
 
   } // class KDReorderFrontend
 
