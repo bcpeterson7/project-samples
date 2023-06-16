@@ -46,7 +46,8 @@ class NewUserMsgProcessor extends WP_REST_Controller {
           'sanitize_callback' => 'sanitize_text_field',
           'validate_callback' => 'rest_validate_request_arg'
         ]
-      ]
+      ],
+      'permission_callback' => '__return_true'
     ) );
   }
 
@@ -62,10 +63,10 @@ class NewUserMsgProcessor extends WP_REST_Controller {
     $parameters = $request->get_params();
     $rest_nonce = sanitize_text_field($parameters['rest_nonce']);
     $data = []; // return this data to the originating script
-		// I'm pretty sure that the nonce is already parsed by this point and that the data being passed is sanitized, but I like to be extra sure...
+		// Data being passed is sanitized at this point
 		if( false !== wp_verify_nonce( $rest_nonce, 'wp_rest' ) ) {
-      $data['staffID'] = $staff_ID = isset($parameters['staffID']) ? sanitize_text_field($parameters['staffID']) : 0;
-			if ( $staff_ID == 0 ) {
+      			$data['staffID'] = $staff_ID = $parameters['staffID'] ?? 0;
+			if ( 0 === $staff_ID ) {
         return new WP_REST_Response( ["status" => "error", "message" => "Staff ID not found."], 401 );
       } else {
 				// In this application staff are custom user accounts separate from wp_user accounts, and stored in a custom table in the database
@@ -78,11 +79,10 @@ class NewUserMsgProcessor extends WP_REST_Controller {
 					// Failure Response
 					$data["status"] = "failure";
 					$data["msg"] = "Failure: update query failed.";
-					wlog("Error 987: Dismiss tutorial failure"); // custom logging that an expected action failed. Helps with debugging if users report an issue.
+					wlog("Error 987: Dismiss tutorial failure"); // custom logging that an expected action failed. Helps with debugging if users report an issue. Appliatoin error logging has to be enabled for this to work
 					return new WP_REST_Response( $data, 200 );
 				} elseif ( 0 == $result ) {
 					// No changes were made
-					unset($_SESSION['user_msg']); // holds the current step in the tutorial. Without this $_SESSION key=>value set no tutorial will show.
 					$data["status"] = "success";
 					$data["msg"] = "No settings were updated.";
 					return new WP_REST_Response( $data, 200 );
@@ -97,9 +97,10 @@ class NewUserMsgProcessor extends WP_REST_Controller {
     } else {
       return new WP_REST_Response( ["status" => "error", "message" => "Security check failed."], 401 );
     }
-    // Ultimate fallback, shouldn't even be possible to occur. But my JAVA instructor always said we should be thorough...
+    // Ultimate fallback, shouldn't even be possible to occur. Never hurts to be thorough though...
     // Error Response
-		wlog("nonce failed 888");
+    // Return a WP_Error object
+    wlog("ERROR 888 - DP_dismiss_new_user_tutorial: nonce failed"); // if custom logging enabled, this will fire
     $error = new WP_Error();
     $error->add( 'nonce_test_failure', 'Environment unstable', [ 'status' => 404 ] );
     return $error;
