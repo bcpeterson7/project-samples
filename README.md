@@ -16,7 +16,7 @@ The WooCommerce samples show the code required to create a custom product single
 
 # Websites Portfolio
 
-More details can be found in the portfolio.md(https://github.com/bcpeterson7/project-samples/blob/main/portfolio.md) file
+More details can be found in the [portfolio.md](https://github.com/bcpeterson7/project-samples/blob/main/portfolio.md) file
 
 https://dp.dataportsis.com/  (K-12 School District Staff Portal Site)  
 username: demo.account  
