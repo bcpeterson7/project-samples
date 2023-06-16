@@ -32,6 +32,6 @@ This is a WordPress site I designed and developed around their logo colors. I am
 ### [https://kismetwebdesign.com](https://kismetwebdesign.com)
 This is my personal website developed solely in HTML5, CSS3, JavaScript and a little PHP. This was an experiment to see if I could create a website that loads faster than a WordPress site. It turns out to be negligibly faster in page load times than a well optimized WordPress site hosted on a VPS or managed platform like WP Engine with the WP Rocket caching plugin. I also integrated animated SVG graphics.
 
-## ENS Repair
+## EMS Repair
 ### [https://emsrepair.com](https://emsrepair.com/)
 After creating their SEO optimized website, EMS Repair had to hire more staff as their business tripled in income. The site design is now 8+ years old and in need of refreshing as modern standards are for full-width layouts with better UI/UX controls. EMS Repair also features a custom staff portal where technicians can make vehicle inspection entries. The portal features a JS script I developed to use a tablet's, or phone's, rear facing camera to take pictures of items needing repair. Additionally, form entries are converted to PDF for email to their customer’s corporate headquarters.
