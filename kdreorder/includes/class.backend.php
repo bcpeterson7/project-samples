@@ -12,8 +12,7 @@ if ( class_exists( 'KDReorder' ) ) :
 
   class KDReorderDashboard {
 
-    public function __construct()
-    {}
+    public function __construct() {}
 
 
     // Initialize the class
