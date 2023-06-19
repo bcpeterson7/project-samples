@@ -45,9 +45,6 @@ if ( ! class_exists( 'KDReorder' ) ) :
       if ( false == is_admin() ) {
         require_once( plugin_dir_path( __FILE__ ) . 'includes/class.frontend.php' );
       }
-
-      // Custom debugging script
-      // require_once( plugin_dir_path( __FILE__ ) . 'includes/debugging.php' );
     }
 
 
