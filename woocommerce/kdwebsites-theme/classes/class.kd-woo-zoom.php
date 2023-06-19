@@ -16,17 +16,13 @@ class KDWOOZOOM {
     add_shortcode( 'list_woo_zoom_products', array( $this, 'list_woo_zoom_products') );
     add_shortcode( 'list_woo_zoom_products_single', array( $this, 'list_woo_zoom_products_single') );
     add_filter( 'body_class', array( $this, 'KD_woo_zoom_body_class') );
-    add_filter( 'stm_zoom_woo_pathes', array( $this, 'KD_stm_zoom_woo_paths') );
     add_action( 'woocommerce_product_options_downloads', array( $this, 'kd_extended_product_options') );
     add_action( 'woocommerce_product_options_pricing', array( $this, 'kd_extended_product_options_pricing') );
     add_filter( 'woocommerce_get_return_url', array( $this, 'kd_override_return_url'), 10, 2 );
     add_action( 'woocommerce_process_product_meta', array( $this, 'kd_save_custom_woo_fields'), 10, 2 );
-    // add_shortcode( 'KD_woo_registration_form_short', array( $this, 'KD_woo_registration_form_short') );
 
-    //https://www.tychesoftwares.com/how-to-modify-the-cart-details-on-woocommerce-checkout-page/
     add_filter ('woocommerce_checkout_cart_item_quantity', array( $this, 'remove_quantity_text'), 10, 2 );
     add_filter ('woocommerce_cart_item_name', array( $this, 'add_quantity') , 10, 3 );
-    // add_action( 'wp_footer', array( $this, 'add_quanity_js'), 10 );
     add_action( 'init', array( $this, 'load_ajax') );
   }
 
@@ -688,13 +684,6 @@ function KD_woo_zoom_body_class( $classes )
     return array_merge( $classes, array( 'kd-woo-zoom-list' ) );
   }
   return $classes;
-}
-
-
-
-public function KD_stm_zoom_woo_paths( $templates )
-{
-  return $templates;
 }
 
 
