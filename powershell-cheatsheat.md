@@ -22,5 +22,5 @@ foreach {
 Create a symbolic link:
 
 ```
-New-Item -ItemType SymbolicLink -Path "\Link\To\Fuax\Endpoint" -Target "/Link/To/Starting/Files"
+New-Item -ItemType SymbolicLink -Path "\Link\To\Fuax\Endpoint" -Target "\Link\To\Starting\Files"
 ```
