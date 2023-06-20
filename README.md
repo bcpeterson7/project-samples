@@ -16,7 +16,7 @@ The WooCommerce samples show the code required to create a custom product single
 
 ## JS Sample
 
-The JS folder contains a Vanila JavaScript (ES6+) file that manages the main navigation menu for Kofflerboats. The menu has been optimized to display differently for PC/tablet at the responsive (narrow viewports) level vs on mobile phone devices. On Mobile the menu opener appears at the bottom of the device and slides up from the bottom. On PC/Laptop the responsive menu slides in from the right. Submenu content is created on the fly and slides out from the right. Pressing escape will close the submenu, and then the nav menu. All of this fucntionality was previously coded using jQuery, but this showcases a pure vanilla JS solution.
+The JS folder contains a Vanila JavaScript (ES6+) file that manages the main navigation menu for Kofflerboats. The menu has been optimized to display differently for PC/tablet at the responsive (narrow viewports) level vs on mobile phone devices. On Mobile the menu opener appears at the bottom of the device and slides up from the bottom. On PC/Laptop the responsive menu slides in from the right. Submenu content is created on the fly and slides out from the right. Pressing escape will close the submenu first (if opened), and then the nav menu. All of this functionality was previously coded using jQuery, but this showcases a pure vanilla JS solution.
 
 # Websites Portfolio
 
