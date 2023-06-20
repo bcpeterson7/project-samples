@@ -16,7 +16,7 @@ This is the development site for a WordPress site using WooCommerce to sell Zoom
 During my time at Oyova I completed many websites and app development projects. For this site, I was solely responsible for the complete design and development of the site, with feedback from my supervisor on colors and images. This WordPress site is a basic 4 page information site with an employee training and quiz section available only to approved users. This site uses the WP Bakery page builder.
 
 ## Koffler Boats
-### [Kofflerboats.com](Kofflerboats.com)
+### [https://kofflerboats.com](https://kofflerboats.com)
 Koffler Boats produces a wide variety of boating craft for anglers. Traffic through this WordPress site has caused the company to triple in employees. The boat inventory is a custom post type, with a custom template. The site also features a custom drag and drop image gallery on some “build” pages. Additionally, the boat feature pages utilize slick.js to display modal galleries of the various features a customer can order. Organic SEO optimization, with A/B testing, has greatly increased site traffic.
 
 ## Oregon Gutter Service
