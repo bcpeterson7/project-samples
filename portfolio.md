@@ -8,9 +8,8 @@ All websites are fully responsive across mobile, tablet and desktop devices and 
 Dataport is an information management system for school districts. The portal is built on top of WordPress, and sits behind a school's firewall. As a bespoke solution for school districts I've developed different modules as needed: 504 plan module, mental health referrals, volunteer management, staff continuing education tracking, library resource rentals, COVID-19 health screening, suicide intervention management, community concerns reporting, restraint and seclusion reporting, and behavioral safety concern reporting. The portals follow the State of Oregon's Student Privacy laws and securely handles information. These portals are on top of Linux LAMP/LEMP stacks, some of which I managed and maintained. Student and staff information is imported nightly from other district CMS/HMIS systems. The demo link shows a very bare-bones install, in regard to available modules.
 
 ## Nebi StarTrader
-### ~~[https://nebistartrader.com](https://nebistartrader.com)~~ 
-#### This site is no longer maintained by the owner. However, the description of work completed may interest you:
-This is a WordPress site using WooCommerce to sell Zoom meetings. A designer provided a FIGMA mock-up that I skinned to the site. I then added improvements to the design - animated buttons, additional hover effects, and at the site owner's request a glowing trail to follow the cursor (desktop only). A lot of custom WooCommerce programming, and template design were developed to fulfill the Figma design requirements.
+### [https://nbst.kismetwebdevelopment.com](https://nbst.kismetwebdevelopment.com/)
+This is a WordPress site using WooCommerce to sell Zoom meetings. A designer provided a FIGMA mock-up that I skinned exactly to the site. I then added improvements to the design - animated buttons, additional hover effects, and at the site owner's request a glowing trail to follow the cursor (desktop only). The homepage hero video was edited by me to loop (it previously ended by pausing on a the text, "SEO & Marketing") and encoded to be a much smaller file-size for faster loading.  A lot of custom WooCommerce programming, and template design were developed to fulfill the Figma design requirements.
 
 ## Angels Sitter Services
 ### [https://angelssitterservice.com](https://angelssitterservice.com)
