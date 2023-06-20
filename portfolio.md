@@ -9,7 +9,7 @@ Dataport is an information management system for school districts. The portal is
 
 ## Nebi StarTrader
 ### [https://nbst.kismetwebdevelopment.com](https://nbst.kismetwebdevelopment.com/)
-This is a WordPress site using WooCommerce to sell Zoom meetings. A designer provided a FIGMA mock-up that I skinned exactly to the site. I then added improvements to the design - animated buttons, additional hover effects, and at the site owner's request a glowing trail to follow the cursor (desktop only). The homepage hero video was edited by me to loop (it previously ended by pausing on a the text, "SEO & Marketing") and encoded to be a much smaller file-size for faster loading.  A lot of custom WooCommerce programming, and template design were developed to fulfill the Figma design requirements.
+This is the development site for a WordPress site using WooCommerce to sell Zoom meetings. The live site is no longer maintained by the owner. A designer provided a FIGMA mock-up that I skinned exactly to the site. I then added improvements to the design - animated buttons, additional hover effects, and at the site owner's request a glowing trail to follow the cursor (desktop only). The homepage hero video was edited by me to loop (it previously ended by pausing on a the text, "SEO & Marketing") and encoded to be a much smaller file-size for faster loading.  A lot of custom WooCommerce programming, and template design were developed to fulfill the Figma design requirements.
 
 ## Angels Sitter Services
 ### [https://angelssitterservice.com](https://angelssitterservice.com)
