@@ -6,4 +6,4 @@ About four years ago I decided that I wanted my PHP code to follow a uniform sta
 
 The main changes this produced were bracket placement on function declarations. I'm personally not a fan of how the PSR opts to drop them down below the function name, and this differs from most of the code I see developed within the WordPress community. However, in my effort to become standardized I adopted these changes.
 
-When working with a team, I always opt to use whatever code formatting (code standards) that the team has adopted.
+When working with a team, I always opt to use whatever code formatting (code standards) that the team has adopted. Additionally, there are code-formatters (e.g. PHP_CodeSniffer, Prettier, etc) that are easily configurable to ensure well-formatted and consistent code output.
