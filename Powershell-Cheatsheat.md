@@ -2,7 +2,7 @@
 Listed below are some Windows Terminal commands that come in handy.
 
 ## Grep Equivalent Command
-The VS Code search functions and filters are nearly always up to the task of finding code, or a string, in a filesystem. However, it's nice to have a cli command as well. The block below searches in a directory, and it's children, for files of a certain file-type (e.g. ".json" in the code below), containing a specific word (e.g. "SearchWord" in the code below):
+The VS Code search functions and filters are nearly always up to the task of finding code, or a string, in a filesystem. However, it's nice to have a cli command as well. The block below searches in a directory, and it's children, for files of a certain file-type (e.g. ".json" in the code below), containing a specific word (e.g. "SearchWord" in the code below). Matches are then written into a file for easy review:
 
 ```
 // Grep equivalent - use in PowerShell
