@@ -24,3 +24,10 @@ Create a symbolic link:
 ```
 New-Item -ItemType SymbolicLink -Path "\Link\To\Fuax\Endpoint" -Target "\Link\To\Starting\Files"
 ```
+
+## Update Date Modified
+I had a copier that only ordered files based on modifed date, not title :/  This one-liner let me update my files :)
+
+```
+(Get-Item "D:\Path\To\File.pdf").LastWriteTime = '06/20/2023 01:02:03'
+```
