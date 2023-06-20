@@ -28,7 +28,7 @@
 
     if (navigation === null) {
       console.error(
-        "Site menu does not exists. Cannot initialize drop-down menus."
+        "Site menu does not exists. Cannot initialize sub-menu items."
       );
       return;
     }
