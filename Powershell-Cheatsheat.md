@@ -26,7 +26,7 @@ New-Item -ItemType SymbolicLink -Path "\Link\To\Fuax\Endpoint" -Target "\Link\To
 ```
 
 ## Update Date Modified
-I had a copier that only ordered files based on modifed date, not title :/  This one-liner let me update my files :)
+I had a copier that only ordered files on my thumbdrives based on modifed date, not titles :/   This one-liner let me order my files :)
 
 ```
 (Get-Item "D:\Path\To\File.pdf").LastWriteTime = '06/20/2023 01:02:03'
