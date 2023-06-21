@@ -4,7 +4,11 @@
 ## Search and Replace
 
 ### Search and Replace
-```wp search-replace  'find-text' 'replacement-text'  --verbose --precise --all-tables --dry-run```
+```wp search-replace  'find-text' 'replacement-text'  --verbose --precise --all-tables --dry-run   
+
+// Change domain name when migrating manually   
+wp search-replace  '//old-site-url.com' '//new-site-url.com'  --verbose --precise --all-tables --dry-run   
+```
 
 
 ## Core Management (Updating)
