@@ -47,7 +47,7 @@ wp plugin update --all
 ### Install/Delete plugins
 ```
 wp plugin install plugin_name second_plugin_name --activate   
-wp plugin delete plugin_name`
+wp plugin delete plugin_name```
 
 ### Activate/Deactivate Plugins
 ```
