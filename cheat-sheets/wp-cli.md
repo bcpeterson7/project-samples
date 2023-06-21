@@ -45,9 +45,9 @@ wp plugin update --all
 ```wp plugin search "Plain text search terms go here!"```
 
 ### Install/Delete plugins
-`
-wp plugin install plugin_name second_plugin_name --activate   <br>
-wp plugin delete plugin_name`
+````
+wp plugin install plugin_name second_plugin_name --activate   
+wp plugin delete plugin_name```
 
 ### Activate/Deactivate Plugins
 ```
