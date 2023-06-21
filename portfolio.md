@@ -29,7 +29,7 @@ This is a WordPress site I designed and developed around their logo colors. I am
 
 ## Kismet Design
 ### [https://kismetwebdesign.com](https://kismetwebdesign.com)
-This is my personal website developed solely in HTML5, CSS3, JavaScript and a little PHP. I host this site on an Ubuntu Linux VPS via a LEMP stack that I maintain. The site was created as an experiment to see if I could create a website that loads faster than a WordPress site. It turns out to have negligibly faster page load times (300ms) than a well optimized WordPress site hosted on a VPS or managed platform like WP Engine with the WP Rocket caching plugin. I also integrated some basic animated SVG graphics.
+This is my personal website developed solely in HTML5, CSS3, JavaScript and a little PHP. I host this site on an Ubuntu Linux VPS via a LEMP stack that I maintain. The site was created as an experiment to see if I could create a website that loads faster than a WordPress site. It turns out to have negligibly faster page load times (300ms) than a well optimized WordPress site hosted on a VPS or managed platform like WP Engine with the WP Rocket caching plugin.
 
 ## EMS Repair
 ### [https://emsrepair.com](https://emsrepair.com/)
