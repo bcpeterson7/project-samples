@@ -4,7 +4,8 @@
 ## Search and Replace
 
 ### Search and Replace
-```wp search-replace  'find-text' 'replacement-text'  --verbose --precise --all-tables --dry-run   
+```
+wp search-replace  'find-text' 'replacement-text'  --verbose --precise --all-tables --dry-run
 
 // Change domain name when migrating manually   
 wp search-replace  '//old-site-url.com' '//new-site-url.com'  --verbose --precise --all-tables --dry-run   
@@ -14,7 +15,8 @@ wp search-replace  '//old-site-url.com' '//new-site-url.com'  --verbose --precis
 ## Core Management (Updating)
 
 ### Update Core
-```// Specify Version   
+```
+// Specify Version
 wp core download --force --skip-content --version=6.2   
 
 // Simple Update Core   
@@ -34,15 +36,18 @@ wp plugin update --all
 ```wp plugin search "Plain text search terms go here!"```
 
 ### Install/Delete plugins
-```wp plugin install plugin_name second_plugin_name --activate   
+```
+wp plugin install plugin_name second_plugin_name --activate   
 wp plugin delete plugin_name`
 
 ### Activate/Deactivate Plugins
-```wp plugin activate plugin_name   
+```
+wp plugin activate plugin_name   
 wp plugin deactivate plugin_name```
 
 ### Update Plugins
-```// Update all plugins   
+```
+// Update all plugins   
 wp plugin update --all   
 
 // Update one plugin
@@ -59,7 +64,8 @@ wp plugin update plugin_name```
 ```wp user create new_username useremail@example.com --role=administrator --user_pass="password"```
 
 ### Modify User
-```wp user update user_id --role=new_role   
+```
+wp user update user_id --role=new_role   
 wp user update user_id --user_email=newemail@example.com```
 
 ### Delete User
