@@ -15,7 +15,6 @@ UPDATE wp_options SET option_value = replace(option_value, '//old-url.com', '//n
 UPDATE wp_posts SET guid = replace(guid, '//old-url.com', '//new-url.com'); 
 UPDATE wp_posts SET post_content = replace(post_content, '//old-url.com', '//new-url.com'); 
 UPDATE wp_postmeta SET meta_value = replace(meta_value, '//old-url.com', '//new-url.com'); 
-
 ```
 
 &nbsp;
@@ -45,7 +44,7 @@ wp plugin update --all
 ```wp plugin search "Plain text search terms go here!"```
 
 ### Install/Delete plugins
-````
+```
 wp plugin install plugin_name second_plugin_name --activate   
 wp plugin delete plugin_name```
 
