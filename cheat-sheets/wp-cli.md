@@ -11,6 +11,7 @@ wp search-replace  'find-text' 'replacement-text'  --verbose --precise --all-tab
 wp search-replace  '//old-site-url.com' '//new-site-url.com'  --verbose --precise --all-tables --dry-run   
 ```
 
+&nbsp;
 
 ## Core Management (Updating)
 
@@ -26,6 +27,7 @@ wp core update
 wp plugin update --all
 ```
 
+&nbsp;
 
 ## Plugin Management
 
@@ -53,7 +55,7 @@ wp plugin update --all
 // Update one plugin
 wp plugin update plugin_name```
 
-
+&nbsp;
 
 ## User Management
 
@@ -71,10 +73,12 @@ wp user update user_id --user_email=newemail@example.com```
 ### Delete User
 ```wp user delete user_id --reassign=user_id_to_assign_content_to```
 
+&nbsp;
 
 ## WPDB / Database Queries
 ```wp db query "SELECT ID, user_login FROM wp_users;"```
 
+&nbsp;
 
 ## Conclusion
 There are many easy to remember functions that make life a snap, especially when something goes wrong in GUI. There is a lot more that can be done, like clearing cache and managing themes, but I don't tend to use WP-CLI for that.
