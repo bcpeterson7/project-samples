@@ -8,7 +8,14 @@
 wp search-replace  'find-text' 'replacement-text'  --verbose --precise --all-tables --dry-run
 
 // Change domain name when migrating manually   
-wp search-replace  '//old-site-url.com' '//new-site-url.com'  --verbose --precise --all-tables --dry-run   
+wp search-replace  '//old-site-url.com' '//new-site-url.com'  --verbose --precise --all-tables --dry-run
+
+// Bonus MySQL queries if wp search and replace fails during site migration
+UPDATE wp_options SET option_value = replace(option_value, '//old-url.com', '//new-url.com') WHERE option_name = 'home' OR option_name = 'siteurl';
+UPDATE wp_posts SET guid = replace(guid, '//old-url.com', '//new-url.com'); 
+UPDATE wp_posts SET post_content = replace(post_content, '//old-url.com', '//new-url.com'); 
+UPDATE wp_postmeta SET meta_value = replace(meta_value, '//old-url.com', '//new-url.com'); 
+
 ```
 
 &nbsp;
