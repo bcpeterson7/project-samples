@@ -52,7 +52,8 @@ wp plugin delete plugin_name
 ### Activate/Deactivate Plugins
 ```
 wp plugin activate plugin_name   
-wp plugin deactivate plugin_name```
+wp plugin deactivate plugin_name
+```
 
 ### Update Plugins
 ```
@@ -60,7 +61,8 @@ wp plugin deactivate plugin_name```
 wp plugin update --all   
 
 // Update one plugin
-wp plugin update plugin_name```
+wp plugin update plugin_name
+```
 
 &nbsp;
 
@@ -75,7 +77,8 @@ wp plugin update plugin_name```
 ### Modify User
 ```
 wp user update user_id --role=new_role   
-wp user update user_id --user_email=newemail@example.com```
+wp user update user_id --user_email=newemail@example.com
+```
 
 ### Delete User
 ```wp user delete user_id --reassign=user_id_to_assign_content_to```
