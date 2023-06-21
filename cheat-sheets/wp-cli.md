@@ -89,3 +89,5 @@ wp user update user_id --user_email=newemail@example.com```
 
 ## Conclusion
 There are many easy to remember functions that make life a snap, especially when something goes wrong in GUI. There is a lot more that can be done, like clearing cache and managing themes, but I don't tend to use WP-CLI for that.
+
+&nbsp;
